@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Heyyyyy...!</title>
+<style>
+  body{
+    background-color: lightblue;
+  }
+p {
+text-align: center;
+font-size: 2rem;
+font-family:cursive;
+padding-top: 4rem;
+color: white;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+border-radius: 1rem;
+}
+button  {
+  margin-top: 6rem;
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+
+}
+
+@media only screen and (max-width: 600px) {
+  img{
+    width: 55%;
+  }
+}
+
+</style>
+</head>
+<body>
+<p>Can we hang out soon?</p>
+<img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+</body>
+<title>BuBU</title>
+<style>
+#botao1 {
+position: fixed;
+top: 71%;
+left: 58%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 38%;
+  top: 68%;
+}
+
+@media only screen and (max-width: 600px) {
+  #botao1 {
+    top: 71%;
+left: 65%;
+  }
+  #botao2 {
+    left: 25%;
+  top: 68%;
+  }
+  
+}
+</style>
+</head>
+<body>
+  
+<button id="botao1">YES BBY!</button>
+<button id="botao2">NO</button>
+
+<script>
+const button2 = document.getElementById('botao2');
+let left = 25;
+button2.addEventListener('mouseover', function() {
+  if(left == 25){
+    left = 40;
+  }else{
+    left = 25;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('YAYY THANK YOU..SEE YAY!');
+});
+</script>
+</body>
+</html>
